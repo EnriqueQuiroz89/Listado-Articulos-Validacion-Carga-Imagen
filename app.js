@@ -40,7 +40,8 @@ const form = document.getElementById('form'),
     miBoton = document.getElementById('boton');
 
 /**Imagen por default en el fomulario */
-const urlImagenDefault = 'https://res.cloudinary.com/muchosregistros/image/upload/w_100,c_scale/v1644423533/hyfqmzt4ppv3awfbuo0e.png';
+const urlImagenDefault = 'https://res.cloudinary.com/muchosregistros/image/upload/w_100,c_scale/v1645734002/vcgsorn2397ptsd71pjg.png';
+
 
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
