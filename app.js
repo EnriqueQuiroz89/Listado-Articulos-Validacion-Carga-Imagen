@@ -510,11 +510,14 @@ function editar(id, articulo, cantidad, nota, imagen) {
 
     /**Cambia el Texto por si el User quiere cambiar la imagen */
     document.getElementById('fileSelect').innerHTML = 'Cambiar imagen';
-
+    /**Muetra el boton para guardar edicion*/
     var btnGuardarEdicion = document.getElementById('guardar-edicion');
     btnGuardarEdicion.style.display = 'unset';
+    //**Lleva la vista al formulario */
+   // Uso constante form
+    moverseA(form.id);        
+    
     // Crea una funcion anonima para ejecutar cuando se haga click
-
     btnGuardarEdicion.onclick = function () {
         // El ID no va a cambiar
         let compraRef = db.collection("articulos").doc(id);
@@ -546,6 +549,12 @@ function editar(id, articulo, cantidad, nota, imagen) {
                 console.error("Error updating document: ", error);
             });
     }
+}
+
+function moverseA(idElemento) {
+    location.hash = "#"+idElemento;
+
+    console.log(idElemento);
 }
 
 function resetFormulario() {

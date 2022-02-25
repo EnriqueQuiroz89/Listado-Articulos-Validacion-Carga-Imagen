@@ -48,11 +48,30 @@ h2 {
    margin: 0 auto;
 }
 
+/**Boton File Select*/
+.file-select {
+    border: solid 1px black;
+    background: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 30%;
+    text-align: center;    
+}
+.file-select:hover {
+    background: white;
+    color: blue;
+}
+
+
 /**Formulario para la imagen*/
 .imagen-form-control {
     border: solid 2px black;
     border-radius: 10px;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 /**Estilo de los Input tipo Texto*/
